@@ -1,0 +1,866 @@
+<html lang="en"><head>
+	<!-- Google Tag Manager -->
+		<script type="text/javascript" async="" src="https://static.ads-twitter.com/uwt.js"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-W0DG8XJWKL&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NJMHSH"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NJMHSH');</script>
+		<!-- End Google Tag Manager -->
+
+	<title>Convert DOCX To PDF - C#</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="Convert DOCX to PDF format in C# code. Save DOCX as PDF using C#.">
+	<meta name="theme-color" content="#3C7DE7">
+
+	<link rel="canonical" href="">
+	<link rel="preload" href="/words/static/css/words.min.css" as="style">
+	<link rel="stylesheet" href="/words/static/css/words.min.css">
+	<script src="/words/static/js/base.min.js"></script>
+	<link href="/words/static/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/a11y-dark.min.css" integrity="sha512-Vj6gPCk8EZlqnoveEyuGyYaWZ1+jyjMPg8g4shwyyNlRQl6d3L9At02ZHQr5K6s5duZl/+YKMnM3/8pDhoUphg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+	<script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" media="all" onload="this.media='all'" crossorigin="anonymous">
+
+		<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":{"@type":"Thing","@id":"https://products.aspose.com/","name":"Products"},"position":1},{"@type":"ListItem","item":{"@type":"Thing","@id":"https://products.aspose.com/words/","name":"Aspose.Words"},"position":2},{"@type":"ListItem","item":{"@type":"Thing","@id":"https://products.aspose.com/words/net/","name":".NET"},"position":3},{"@type":"ListItem","item":{"@type":"Thing","@id":"https://products.aspose.com/words/net/conversion/","name":"Conversion"},"position":4},{"@type":"ListItem","item":{"@type":"Thing","@id":"https://products.aspose.com/words/net/conversion/docx-to-pdf/","name":"DOCX to PDF in C#"},"position":5}]}</script>
+		<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How to convert DOCX into PDF?","acceptedAnswer":{"@type":"Answer","text":"Open the site: <a href=\"https://products.aspose.com/words/net/conversion/docx-to-pdf/\" target=\"_blank\" rel=\"noopener\"> DOCX into PDF </a>. Drag and drop DOCX files to quickly convert them into PDF. Or just use a code sample in C# with a few lines of code.<br/><ol><li>Install Aspose.Words for .NET.</li><li>Add a library reference (import the library) to your C# project.</li><li>Open the source DOCX file in C#.</li><li>Call the 'Save()' method, passing an output filename with PDF extension.</li><li>Get the result of DOCX conversion as PDF.</li></ol>"}},{"@type":"Question","name":"Why convert DOCX to PDF in C#?","acceptedAnswer":{"@type":"Answer","text":"Documents are encoded in many ways, and DOCX files may be incompatible with the some software. To open and read such files, just convert them to appropriate file format."}},{"@type":"Question","name":"What other file formats can I convert my DOCX to?","acceptedAnswer":{"@type":"Answer","text":"We support a variety of file formats for DOCX conversion, including DOCX, ODT, PDF, DOC, HTML, RTF, Markdown, XML, JPG, PNG, TIFF, WPS, TXT and many more."}},{"@type":"Question","name":"What is the maximum file size for DOCX to PDF conversion supported by 'Aspose.Words for .NET'?","acceptedAnswer":{"@type":"Answer","text":"There are no file size limits for converting DOCX files with 'Aspose.Words for .NET'."}}]}</script>
+		<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to convert DOCX to PDF","description":"Use our document conversion API to develop high-level, platform independent software for .NET and .NET Core platforms. This is a professional software solution to import and export DOCX, PDF, and many other document formats using C#, F#, VB.NET.","image":{"@type":"ImageObject","url":"https://products.aspose.com/words/static/img/HowTo/Conversion/NET/Step3.png","height":"179","width":"409"},"url":"https://products.aspose.com/words/net/conversion/docx-to-pdf/","step":[{"@type":"HowToStep","name":"Install C# library","image":{"@type":"ImageObject","url":"https://products.aspose.com/words/static/img/HowTo/Conversion/NET/Step1.png","height":"626","width":"1346"},"url":"https://products.aspose.com/words/net/conversion/docx-to-pdf/","text":"Install Aspose.Words for .NET."},{"@type":"HowToStep","name":"Add a library reference (import the library)","image":{"@type":"ImageObject","url":"https://products.aspose.com/words/static/img/HowTo/Conversion/NET/Step2.png","height":"273","width":"373"},"url":"https://products.aspose.com/words/net/conversion/docx-to-pdf/","text":"Add a library reference (import the library) to your C# project."},{"@type":"HowToStep","name":"Read the input file using C#","image":{"@type":"ImageObject","url":"https://products.aspose.com/words/static/img/HowTo/Conversion/NET/Step3.png","height":"179","width":"409"},"url":"https://products.aspose.com/words/net/conversion/docx-to-pdf/","text":"Open the source DOCX file in C#."},{"@type":"HowToStep","name":"Convert your file to target format","image":{"@type":"ImageObject","url":"https://products.aspose.com/words/static/img/HowTo/Conversion/NET/Step4.png","height":"179","width":"409"},"url":"https://products.aspose.com/words/net/conversion/docx-to-pdf/","text":"Call the 'Save()' method, passing an output filename with PDF extension."},{"@type":"HowToStep","name":"Get the result","image":{"@type":"ImageObject","url":"https://products.aspose.com/words/static/img/HowTo/Conversion/NET/Step5.png","height":"500","width":"850"},"url":"https://products.aspose.com/words/net/conversion/docx-to-pdf/","text":"Get the result of DOCX conversion as PDF."}],"supply":{"@type":"HowToSupply","name":"Word document"},"tool":[{"@type":"HowToTool","name":"Visual Studio, Rider, Sublime"},{"@type":"HowToTool","name":"Aspose Words"}],"totalTime":"PT6M"}</script>
+
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Aspose Words Examples">
+		<meta property="og:title" content="Convert DOCX to PDF in C#">
+		<meta property="og:description" content="Convert DOCX to PDF format in C# code. Save DOCX as PDF using C#.">
+		<meta property="og:image" content="https://i.imgur.com/90EQccQ.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:url" content="https://products.aspose.com/words/net/conversion/docx-to-pdf/">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@AsposeWords">
+		<meta name="twitter:creator" content="@AsposeWords">
+		<meta name="twitter:title" content="Convert DOCX to PDF in C# (tweeter)">
+		<meta name="twitter:description" content="Convert DOCX to PDF format in C# code. Save DOCX as PDF using C#.">
+		<meta name="twitter:image:src" content="https://i.imgur.com/FzkCJRd.png">
+<script src="https://bat.bing.com/p/action/5061378.js" type="text/javascript" async="" data-ueto="ueto_e6302a3bec"></script></head>
+
+<body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJMHSH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<a href="https://www.facebook.com/share.php?u=https%3A%2F%2Fskifvideo.github.io%2F">Facebook</a>
+	<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fskifvideo.github.io%2F">Share on Twitter</a>
+	<a href="https://telegram.me/share/url?url=https%3A%2F%2Fskifvideo.github.io%2F">Share on Telegram</a>
+	<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fskifvideo.github.io%2F">Share on Linkedin</a>
+	<a href="https://reddit.com/submit?url=https%3A%2F%2Fskifvideo.github.io%2F">Share on Reddit</a>
+
+<div id="DynabicMenuInnerDiv" data-nosnippet="">
+	<div class="topheader">
+		<div class="topsection topsection-panel">
+			<button type="button" class="togglebtn" id="mobile-button">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="venturelogo"><a class="mobile-fix" href="https://www.aspose.com" title="Aspose Logo"></a></div>
+			<div class="userlogstatus">
+				<div id="DynabicMenuUserControls">
+						<div id="locale" data-bs-toggle="modal" data-bs-target="#langModal">
+							<i class="fas fa-globe">&nbsp;</i>
+							English
+						</div>
+					<div class="topsearchboxdiv active">
+						<div class="blackout"></div>
+						<div class="topsearchbox">
+							<ul class="topsearchboxul">
+								<li>
+									<a class="topsearchbtn" href="https://search.aspose.com" title="Search"><i class="fas fa-search"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="userloginbox desklink">
+						<ul class="loginanchor" id="loginanchor">
+							<li><a href="#" class="userlogin" title="Log in"><i class="far fa-user"></i></a>
+								<ul>
+									<li>
+										<a href="https://forum.aspose.com/session/sso/" class="topurlink moblink">
+											<div id="lblMenuSignInExistingUser">Sign in Existing User</div>
+										</a>
+									</li>
+									<li>
+										<a href="https://id.containerize.com/signup?clientId=prod.discourse.aspose&amp;redirectUrl=https://forum.aspose.com/session/sso/" class="topurlink moblink">
+											<div id="lblMenuSignInNewUser">Sign up New User</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menuitems">
+				<ul class="topheadermenus twocolmenu">
+					<li id="menuitems-menu-1"><a href="https://products.aspose.com" class="mobileanchor" onclick="toggleSubmenu(1, event)">Products</a>
+						<ul id="menuitems-submenu-1">
+							<li class="linkmobile"><a href="https://products.aspose.com">All Products</a></li>
+							<div class="productmenubox">
+								<a href="https://products.aspose.com/total/"><em>Aspose.Total <b>Product Family</b></em></a>
+								<a href="https://products.aspose.com/words/"><em>Aspose.Words <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/pdf/"><em>Aspose.PDF <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/cells/"><em>Aspose.Cells <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/email/"><em>Aspose.Email <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/slides/"><em>Aspose.Slides <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/imaging/"><em>Aspose.Imaging <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/barcode/"><em>Aspose.BarCode <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/diagram/"><em>Aspose.Diagram <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/tasks/"><em>Aspose.Tasks <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/ocr/"><em>Aspose.OCR <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/note/"><em>Aspose.Note <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/cad/"><em>Aspose.CAD <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/3d/"><em>Aspose.3D <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/html/"><em>Aspose.HTML <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/gis/"><em>Aspose.GIS <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/zip/"><em>Aspose.ZIP <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/page/"><em>Aspose.Page <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/psd/"><em>Aspose.PSD <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/omr/"><em>Aspose.OMR <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/pub/"><em>Aspose.PUB <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/svg/"><em>Aspose.SVG <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/finance/"><em>Aspose.Finance <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/drawing/"><em>Aspose.Drawing <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/font/"><em>Aspose.Font <b>Product Solution</b></em></a>
+								<a href="https://products.aspose.com/tex/"><em>Aspose.TeX <b>Product Solution</b></em></a>
+							</div>
+						</ul>
+					</li>
+					<li id="menuitems-menu-2"><a href="https://purchase.aspose.com" class="mobileanchor" onclick="toggleSubmenu(2, event)">Purchase</a>
+						<ul id="menuitems-submenu-2">
+							<li><a href="https://purchase.aspose.com/buy/">Buy Now</a> </li>
+							<li><a href="https://purchase.aspose.com/admin/pricing">Pricing Information</a> </li>
+							<li><a href="https://downloads.aspose.com/">Free Trials</a> </li>
+							<li><a href="https://purchase.aspose.com/temporary-license/">Temporary License</a></li>
+							<li><a href="https://purchase.aspose.com/policies/">Policies</a> </li>
+							<li><a href="https://purchase.aspose.com/orders/">My Orders &amp; Quotes</a> </li>
+							<li><a href="https://purchase.aspose.com/renew/">Renew an Order</a> </li>
+							<li><a href="https://purchase.aspose.com/upgrade/">Upgrade an Order</a> </li>
+						</ul>
+					</li>
+					<li id="menuitems-menu-3"><a href="javascript:;" class="mobileanchor" onclick="toggleSubmenu(3, event)">Support</a>
+						<ul id="menuitems-submenu-3">
+							<!--<li class="linkmobile"><a href="javascript:;">Support</a><li>-->
+							<li><a href="https://docs.aspose.com">Docs</a> </li>
+							<li><a href="https://apireference.aspose.com">API Reference</a> </li>
+							<li><a href="https://demos.aspose.com">Live Demos</a> </li>
+							<li><a href="https://aspose.github.io">Code Samples</a> </li>
+							<li><a href="https://forum.aspose.com">Free Support</a> </li>
+							<li><a href="https://aspose-free-consulting.github.io">Free Consulting</a> </li>
+							<li><a href="https://helpdesk.aspose.com">Paid Support</a> </li>
+							<li><a href="https://consulting.aspose.com/home/">Paid Consulting</a> </li>
+							<li><a href="https://blog.aspose.com">Blog</a> </li>
+							<li><a href="https://kb.aspose.com">Knowledge Base</a> </li>
+							<li><a href="https://releases.aspose.com">New Releases</a> </li>
+							<li><a href="https://status.aspose.com">Status</a> </li>
+						</ul>
+					</li>
+					<li id="menuitems-menu-4"><a href="https://websites.aspose.com" class="mobileanchor" onclick="toggleSubmenu(4, event)">Websites</a>
+						<ul id="menuitems-submenu-4">
+							<li><a href="https://websites.aspose.com/aspose/com/">aspose.com</a></li>
+							<li><a href="https://websites.aspose.com/aspose/cloud/">aspose.cloud</a></li>
+							<li><a href="https://websites.aspose.com/aspose/app/">aspose.app</a></li>
+							<li><a href="https://websites.aspose.com/groupdocs/com/">groupdocs.com</a></li>
+							<li><a href="https://websites.aspose.com/groupdocs/cloud/">groupdocs.cloud</a></li>
+							<li><a href="https://websites.aspose.com/groupdocs/app/">groupdocs.app</a></li>
+							<li><a href="https://websites.aspose.com/conholdate/com/">conholdate.com</a></li>
+							<li><a href="https://websites.aspose.com/conholdate/cloud/">conholdate.cloud</a></li>
+							<li><a href="https://websites.aspose.com/conholdate/app/">conholdate.app</a></li>
+							<li><a href="https://websites.aspose.com/containerize/com/">containerize.com</a></li>
+							<li><a href="https://websites.aspose.com/codeporting/com/">codeporting.com</a></li>
+							<li><a href="https://websites.aspose.com/fileformat/com/">fileformat.com</a></li>
+							<!--<li><a href="https://websites.aspose.com/pirathon/com/">pirathon.com</a></li>-->
+						</ul>
+					</li>
+					<li id="menuitems-menu-5"> <a href="https://about.aspose.com" class="mobileanchor" onclick="toggleSubmenu(5, event)">About Us</a>
+						<ul id="menuitems-submenu-5">
+							<li><a href="https://about.aspose.com">About Us</a></li>
+							<li><a href="https://about.aspose.com/contact/">Contacts</a></li>
+							<li><a href="https://about.aspose.com/customers/">Customers</a></li>
+							<li><a href="https://about.aspose.com/legal/">Legal</a></li>
+							<li><a href="https://about.aspose.com/security/">Security</a></li>
+							<li><a href="https://about.aspose.com/events/">Events</a></li>
+							<li><a href="https://about.aspose.com/acquisition/">Acquisition</a></li>
+						</ul>
+					</li>
+					<li>
+						<div id="DynabicMenuUserControlsclone"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	let menuVisible = false;
+	let toggledSubmenu = null;
+
+	function toggleSubmenu(id, event) {
+		event.preventDefault();
+		event.stopPropagation();
+
+		const menu    = document.getElementById(`menuitems-menu-${id}`);
+		const submenu = document.getElementById(`menuitems-submenu-${id}`);
+
+		if (submenu) {
+			if (toggledSubmenu === null) {
+				toggledSubmenu = id;
+				menu.classList.add('open');
+				submenu.style.setProperty('display', 'block', 'important');
+			} else {
+				const oldMenu    = document.getElementById(`menuitems-menu-${toggledSubmenu}`);
+				const oldSumbenu = document.getElementById(`menuitems-submenu-${toggledSubmenu}`);
+				if (oldMenu) {
+					oldMenu.classList.remove('open');
+				}
+				if (oldSumbenu) {
+					oldSumbenu.style.setProperty('display', 'none', 'important');
+				}
+
+				if (toggledSubmenu === id) {
+					toggledSubmenu = null;
+				} else {
+					toggledSubmenu = id;
+					menu.classList.add('open');
+					submenu.style.setProperty('display', 'block', 'important');
+				}
+			}
+		}
+	}
+
+	document.addEventListener('DOMContentLoaded', function(event) {
+		const menuBtn = document.getElementById('mobile-button');
+		if (menuBtn) {
+			menuBtn.addEventListener('click', (evt) => {
+				evt.preventDefault();
+				evt.stopPropagation();
+
+				const items = document.getElementsByClassName('menuitems');
+				if (items && items.length) {
+					if (menuVisible) {
+						items[0].style.setProperty('left', '-300px', 'important');
+						menuVisible = false;
+					} else {
+						items[0].style.setProperty('left', '0', 'important');
+						menuVisible = true;
+					}
+				}
+				console.info('MENU CLICK!');
+			});
+		}
+	});
+</script>
+
+
+		<div class="container-fluid productBreadcrumbLayout" data-nosnippet="">
+			<div class="container">
+				<nav class="row" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="https://products.aspose.com/">Products</a></li>
+								<li class="breadcrumb-item"><a href="https://products.aspose.com/words/">Aspose.Words</a></li>
+								<li class="breadcrumb-item"><a href="https://products.aspose.com/words/net/">.NET</a></li>
+								<li class="breadcrumb-item"><a href="https://products.aspose.com/words/net/conversion/">Conversion</a></li>
+						<li class="breadcrumb-item active" aria-current="page">DOCX to PDF in C#</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+
+
+<div class="container-fluid operationHeader">
+	<div class="container">
+		<div class="row pt-lg-5">
+			<div class="col-md-8">
+				<h1>Convert DOCX to PDF in C#</h1>
+				<div class="pt-5">
+					<h2>High-speed C# library for converting DOCX to PDF</h2>
+					<p class="pr-h2">Use our document conversion API to develop high-level, platform independent software for .NET and .NET Core platforms. This is a professional software solution to import and export DOCX, PDF, and many other document formats using C#, F#, VB.NET.</p>
+				</div>
+			</div>
+			<div class="col-md-4" data-nosnippet="">
+				<a href="https://products.aspose.com/words/net/">
+					<div class="aspose_product_img">
+						<div class="circleiconsformat"></div>
+						<img src="https://www.aspose.cloud/templates/aspose/img/products/words/aspose_words-for-net.svg" alt="Aspose Words for .NET">
+						<div class="conversiontag">PDF</div>
+					</div>
+				</a>
+				<div class="container progLangPlace">
+	<div class="row">
+		<div class="col-auto progLangContainer"><a class="progLang pythonColor " type="button" href="https://products.aspose.com/words/python-net/conversion/docx-to-pdf/">Python</a></div>
+		<div class="col-auto progLangContainer"><a class="progLang javaColor bigFont " type="button" href="https://products.aspose.com/words/java/conversion/docx-to-pdf/">Java</a></div>
+		<div class="col-auto progLangContainer"><a class="progLang csColor bigFont selected" type="button" href="https://products.aspose.com/words/net/conversion/docx-to-pdf/">C#</a></div>
+		<div class="col-auto progLangContainer"><a class="progLang cppColor bigFont " type="button" href="https://products.aspose.com/words/cpp/conversion/docx-to-pdf/">C++</a></div>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row gap-5 body">
+	<div class="container-fluid bg-white">
+		<div class="row my-5 content gap-2">
+			<div class="textContent">
+				<h2>Convert DOCX to PDF using C#</h2>
+
+<p>Need to convert DOCX files to PDF programmatically? With <strong>"Aspose.Words for .NET"</strong> any developer can convert DOCX to PDF format with just a few lines of C# code.</p>
+
+<p>Modern document-processing C# API creates PDF from DOCX with high speed. Test the quality of DOCX to PDF conversion right in a browser. Powerful C# library allows converting DOCX files to many popular formats.</p>
+
+<h2>Save DOCX as PDF in C#</h2>
+
+<p>The following example demonstrates how to convert DOCX to PDF in C#.</p>
+
+<p>Follow the easy steps to turn a DOCX file into PDF format. Read DOCX file from the local drive, then simply save it as PDF, specifying the required file format by PDF extension. For both DOCX reading and PDF writing you can use fully qualified filenames. The output PDF content and formatting will be identical to the original DOCX document.</p>
+
+			</div>
+			<p id="alertMessage" class="alert alert-danger d-none" role="alert"></p>
+			<div class="panelContainer">
+
+<div>
+	<div id="code" class="parametersblock">
+		<div class="h3">
+			Code example in C# to convert DOCX to PDF format
+		</div>
+		<div class="parametersBox">
+			<div class="row pt-3">
+				<div class="col-3 description">
+					<span class="position">
+Input file					</span>
+				</div>
+				<div class="col-3 action">
+					<form id="fileInputContainer">
+						<input type="file" class="fileInput" id="fileInput" accept=".docx">
+						<label class="actionButton backgroundBlue fileInputLabel" for="fileInput">Upload a file</label>
+					</form>
+				</div>
+				<div class="col-3 description hide-in-mobile-block">
+					<span id="fileName" class="fileName">
+						Upload a file you want to convert
+					</span>
+				</div>
+				<div class="col-3 action hide-in-mobile-block hide-in-small-desktop-block">
+					<a class="actionButton disabled" id="runCodeButton" type="button" onclick="runCode()">Run code</a>
+				</div>
+			</div>
+
+
+			<div class="row pb-3">
+				<div class="col-3 description">
+					<span class="position">Output format</span>
+				</div>
+				<div class="col-3 action output-format">
+					<select class="actionButton backgroundBlue" id="selectOutputFormat" onchange="changeOutputFileInSnippet(this.options[this.selectedIndex].value)">
+									<option value="docx">DOCX</option>
+									<option value="pdf" selected="selected">PDF</option>
+									<option value="md">MD</option>
+									<option value="html">HTML</option>
+									<option value="txt">TXT</option>
+									<option value="doc">DOC</option>
+									<option value="dot">DOT</option>
+									<option value="docm">DOCM</option>
+									<option value="dotx">DOTX</option>
+									<option value="dotm">DOTM</option>
+									<option value="rtf">RTF</option>
+									<option value="epub">EPUB</option>
+									<option value="ps">PS</option>
+									<option value="pcl">PCL</option>
+									<option value="mhtml">MHTML</option>
+									<option value="xhtml">XHTML</option>
+									<option value="odt">ODT</option>
+									<option value="ott">OTT</option>
+									<option value="xps">XPS</option>
+									<option value="png">PNG</option>
+									<option value="bmp">BMP</option>
+									<option value="emf">EMF</option>
+									<option value="gif">GIF</option>
+									<option value="svg">SVG</option>
+									<option value="tiff">TIFF</option>
+									<option value="jpg">JPG</option>
+					</select>
+				</div>
+				<div class="col-3 description hide-in-mobile-block">
+					Select the target format from the list
+				</div>
+				<div class="col-3 hide-in-mobile-block hide-in-small-desktop-block"></div>
+			</div>
+			<div class="rowLine"></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	var progLang = "C#";
+	var runCodeRequestUrl = "https://products.aspose.com/words/net/conversion/runcode/";
+	var inputFormats = ["docx"];
+</script>
+
+				<div>
+	<div id="code" class="codeblock">
+		<div class="highlight">
+			<pre class="codeBox"><code id="snippet" class="cs hljs language-csharp"><span class="hljs-keyword">using</span> Aspose.Words;
+
+<span class="hljs-keyword">var</span> doc = <span class="hljs-keyword">new</span> Document(<span class="hljs-string">"Input.docx"</span>);
+doc.Save(<span class="hljs-string">"Output.pdf"</span>);
+</code></pre>
+			<div class="row run-code-button only-in-mobile-flex only-in-small-desktop-flex">
+				<div class="col action">
+					<a class="actionButton disabled" id="runCodeButtonMobile" type="button" onclick="runCode()">Run code</a>
+				</div>
+			</div>
+		</div>
+		<div class="h3">
+			&ensp;&ensp;
+			<div class="clipboard">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                </svg>
+				<a class="copyCodeButton" href="javascript:void(0)" onclick="copyCode()">Copy C# code to the clipboard</a>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+
+
+<div class="textContent">
+	<div class="howtolist" id="howto">
+		<div class="howtosection">
+			<div>
+				<h2>How to convert DOCX to PDF</h2>
+				<ol>
+						<li>Install Aspose.Words for .NET.</li>
+						<li>Add a library reference (import the library) to your C# project.</li>
+						<li>Open the source DOCX file in C#.</li>
+						<li>Call the 'Save()' method, passing an output filename with PDF extension.</li>
+						<li>Get the result of DOCX conversion as PDF.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+			<div class="textContent">
+				<div class="row contentRow">
+					<h2>C# library to convert DOCX to PDF</h2>
+<p>There are three alternative options to install Aspose.Words for .NET onto your system. Please choose one that resembles your needs and follow the step-by-step instructions:</p>
+
+<p>
+</p><ul>
+  <li>Install a <a class="acontent" href="https://www.nuget.org/packages/Aspose.Words/" rel="nofollow noopener" target="_blank">NuGet Package</a>. See <a class="acontent" href="https://docs.aspose.com/words/net/installation/#install-or-update-aspose-words-for-net-using-nuget" rel="nofollow noopener" target="_blank">Documentation</a></li>
+  <li>Install the library using <a class="acontent" href="https://docs.aspose.com/words/net/installation/#install-or-update-asposewords-using-package-manager-console" rel="nofollow noopener" target="_blank">Package Manager Console</a> within Visual Studio IDE</li>
+  <li>Install the library manually using <a class="acontent" href="https://docs.aspose.com/words/net/installation/#install-asposewords-for-net-using-installer" rel="nofollow noopener" target="_blank">Windows Installer</a></li>
+</ul>
+<p></p>
+
+				</div>
+			</div>
+
+			<div class="textContent">
+				<div class="row contentRow">
+					<h2>System Requirements</h2>
+
+<p>Our product is fully cross-platform and supports all major .NET implementations following '.NET Standard 2.0' specification:</p>
+<ul>
+ <li>Microsoft .NET Framework, starting from the earliest 2.0 version, and ending with the latest '.NET Framework 4.8'</li>
+ <li>.NET Core, starting from the earliest 2.0, and ending with the latest '.NET 5'</li>
+ <li>Mono &gt;= 2.6.7</li>
+</ul>
+
+<p>As far as .NET code doesn't depend on the underlying hardware or operating system, but only on a Virtual Machine, you are free to develop any kind of software for Windows, macOS, Android, iOS and Linux. Just make sure you have installed the corresponding version of .NET Framework, .NET Core, Windows Azure, Mono or Xamarin.</p>
+
+<p>We recommend using Microsoft Visual Studio, Xamarin, and MonoDevelop integrated development environments to create C#, F#, VB.NET applications.</p>
+
+<p>Fore more details please refer to <a class="acontent" href="https://docs.aspose.com/words/net/system-requirements/" rel="nofollow noopener" target="_blank">Product Documentation</a>.</p>
+
+				</div>
+			</div>
+
+<div class="col-md-12 pt-5 pb-5 otherPopularity">
+	<div class="container">
+		<h3 class="d-block header">Other Supported DOCX Conversions</h3>
+		<p class="d-block text">You can convert DOCX to many other file formats:</p>
+		<div class="row items">
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-doc/">DOCX TO DOC</a></div>
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-epub/">DOCX TO EPUB</a></div>
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-html/">DOCX TO HTML</a></div>
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-image/">DOCX TO IMAGE</a></div>
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-jpg/">DOCX TO JPG</a></div>
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-odt/">DOCX TO ODT</a></div>
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-png/">DOCX TO PNG</a></div>
+				<div class="col-md-3 item"><a href="https://products.aspose.com/words/net/conversion/docx-to-txt/">DOCX TO TXT</a></div>
+		</div>
+	</div>
+</div>		</div>
+	</div>
+	<div id="productTag" style="display:none">
+		Conversion
+	</div>
+</div>
+
+<div class="modal fade" id="langModal" tabindex="-1" aria-labelledby="langModalLabel" data-nosnippet="">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content" style="background-color: #343a40">
+			<div class="modal-body">
+				<div class="row row-cols-sm-2 row-cols-md-4">
+						<div class="col langbox">
+								<a href="https://products.aspose.com/af/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-za"></i>&nbsp;&nbsp;&nbsp;Afrikaans</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/hr/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-hr"></i>&nbsp;&nbsp;&nbsp;Hrvatski</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ro/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ro"></i>&nbsp;&nbsp;&nbsp;Română</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/hy/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-am"></i>&nbsp;&nbsp;&nbsp;Հայերեն</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ht/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ht"></i>&nbsp;&nbsp;&nbsp;Ayisyen</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/id/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-id"></i>&nbsp;&nbsp;&nbsp;Indonesia</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/sk/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-sk"></i>&nbsp;&nbsp;&nbsp;Slovák</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ka/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ge"></i>&nbsp;&nbsp;&nbsp;ქართველი</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ca/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ad"></i>&nbsp;&nbsp;&nbsp;Català</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/is/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-is"></i>&nbsp;&nbsp;&nbsp;Íslenska</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/sl/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-si"></i>&nbsp;&nbsp;&nbsp;Slovenščina</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/iw/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-il"></i>&nbsp;&nbsp;&nbsp;עִברִית</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/cs/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-cz"></i>&nbsp;&nbsp;&nbsp;Čeština</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/it/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-it"></i>&nbsp;&nbsp;&nbsp;Italiano</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/fi/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-fi"></i>&nbsp;&nbsp;&nbsp;Suomalainen</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ur/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-pk"></i>&nbsp;&nbsp;&nbsp;اردو</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/cy/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-gb"></i>&nbsp;&nbsp;&nbsp;Cymraeg</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ku/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-iq"></i>&nbsp;&nbsp;&nbsp;Kurdî</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/sv/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-se"></i>&nbsp;&nbsp;&nbsp;Svenska</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ar/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ae"></i>&nbsp;&nbsp;&nbsp;عربي</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/da/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-dk"></i>&nbsp;&nbsp;&nbsp;Dansk</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/lv/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-lv"></i>&nbsp;&nbsp;&nbsp;Latvietis</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/vi/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-vn"></i>&nbsp;&nbsp;&nbsp;Tiếng Việt</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/fa/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ir"></i>&nbsp;&nbsp;&nbsp;فارسی</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/de/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-de"></i>&nbsp;&nbsp;&nbsp;Deutsch</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/lt/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-lt"></i>&nbsp;&nbsp;&nbsp;Lietuvis</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/tr/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-tr"></i>&nbsp;&nbsp;&nbsp;Türk</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/hi/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-in"></i>&nbsp;&nbsp;&nbsp;हिन्दी</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/et/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ee"></i>&nbsp;&nbsp;&nbsp;Eestlane</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/hu/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-hu"></i>&nbsp;&nbsp;&nbsp;Magyar</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/jv/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-id"></i>&nbsp;&nbsp;&nbsp;Wong jawa</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/th/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-th"></i>&nbsp;&nbsp;&nbsp;ไทย</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-us"></i>&nbsp;&nbsp;&nbsp;English</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ms/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-my"></i>&nbsp;&nbsp;&nbsp;Melayu</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/el/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-gr"></i>&nbsp;&nbsp;&nbsp;Ελληνικά</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/am/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-et"></i>&nbsp;&nbsp;&nbsp;አማርኛ</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/es/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-es"></i>&nbsp;&nbsp;&nbsp;Español</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/nl/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-nl"></i>&nbsp;&nbsp;&nbsp;Nederlands</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/bg/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-bg"></i>&nbsp;&nbsp;&nbsp;Български</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ko/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-kr"></i>&nbsp;&nbsp;&nbsp;한국어</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/tl/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ph"></i>&nbsp;&nbsp;&nbsp;Filipino</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/no/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-no"></i>&nbsp;&nbsp;&nbsp;Norsk</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/kk/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-kz"></i>&nbsp;&nbsp;&nbsp;Қазақ</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ja/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-jp"></i>&nbsp;&nbsp;&nbsp;日本語</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/fr/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-fr"></i>&nbsp;&nbsp;&nbsp;Français</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/pl/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-pl"></i>&nbsp;&nbsp;&nbsp;Polskie</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ru/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ru"></i>&nbsp;&nbsp;&nbsp;Русский</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/zh/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-cn"></i>&nbsp;&nbsp;&nbsp;简体中文</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/ga/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ie"></i>&nbsp;&nbsp;&nbsp;Gaeilge</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/pt/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-pt"></i>&nbsp;&nbsp;&nbsp;Português</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/uk/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-ua"></i>&nbsp;&nbsp;&nbsp;Український</span>
+								</a>
+						</div>
+						<div class="col langbox">
+								<a href="https://products.aspose.com/zh-hant/words/net/conversion/docx-to-pdf/">
+									<span><i class="cf-24 cf-cn"></i>&nbsp;&nbsp;&nbsp;中國傳統的</span>
+								</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="progress-bar-layout d-none" id="progressBarLayout">
+	<div class="progress">
+    	<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 5%">5%</div>
+    </div>
+	<div id="loader" class="loader" role="status" aria-hidden="true"></div>
+</div>
+
+
+<script>
+var MaximumUploadSizeMessage = "The size of files should be less than 10 MB:";
+var MaximumUploadSize = 10485760;
+var FileWrongTypeMessage = "You are trying to upload document(s) of unsupported type:";
+</script>
+
+
+<div id="dvMenuFooter" data-nosnippet="">
+	<div class="container-fluid footersubscribe" id="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="subscibe-box">
+						<div class="subscibe-lhs">
+							<h4>Subscribe to Aspose Product Updates</h4>
+							<p>Get monthly newsletters and offers directly delivered to your mailbox.</p>
+						</div>
+						<div class="subscibe-rhs">
+							<form style="color:#FFFFFF" id="subscribe_form" method="post">
+								<div id="subscribe_fields">
+									<input placeholder="your@address" type="email" id="subscribe_email" class="form-control" name="subscribe_email" required="">
+									<button class="btn btn-danger" id="subscribe_submit" type="button" data-endpoint="https://newsletter.aspose.com/subscribe/" data-list="English" data-loading-text="Submit" data-exists="Specified email address already exists." data-success="Thank you for subscribing.">Submit</button>
+								</div>
+							</form>
+							<div id="subscribe_message" style="display:none;"><p></p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Newsletter Subscription Widget End. -->
+	<div class="footerbottom">
+		<div class="footercol">
+			<div class="socialicon">
+				<ul>
+					<li><a class="fb" title="Like us on Facebook" href="https://www.facebook.com/aspose/"><i class="fab fa-facebook"></i></a></li>
+					<li><a class="twitter" title="Follow us on Twitter" href="https://twitter.com/aspose"><i class="fab fa-twitter"></i></a></li>
+					<!-- <li><a class="googleplus" title="Join us on Google " href="https://plus.google.com/ aspose"><i class="fa-google-plus fa"></i></a></li> -->
+					<li><a class="youtube" title="Watch us on YouTube" href="https://www.youtube.com/user/AsposeVideo"><i class="fab fa-youtube"></i></a></li>
+					<li><a class="linkedin" title="Link us on LinkedIn" href="https://www.linkedin.com/company/aspose"><i class="fab fa-linkedin"></i></a></li>
+					<li><a class="stackoverflow" title="Find us on StackOverflow" href="https://stackoverflow.com/questions/tagged/aspose"><i class="fab fa-stack-overflow"></i></a> </li>
+					<li><a class="quora" title="Check us out on Quora" href="https://asposecom.quora.com"><i class="fab fa-quora"></i></a> </li>
+					<li><a href="https://aspose.github.io" title="Github Repositories" class="github"><i class="fab fa-github-alt"></i></a></li>
+					<li><a class="RSS" title="Subscribe to the feeds" href="https://blog.aspose.com/feed/"><i class="fas fa-rss"></i></a></li>
+				</ul>
+			</div>
+			<div class="bottomenuitems">
+				<ul>
+					<li><a href="https://www.aspose.com">Home</a></li>
+					<li><a href="https://products.aspose.com">Products</a></li>
+					<li><a href="https://releases.aspose.com">New Releases</a></li>
+					<li><a href="https://purchase.aspose.com/pricing">Pricing</a></li>
+					<li><a href="https://docs.aspose.com">Docs</a></li>
+					<li><a href="https://demos.aspose.com">Live Demos</a></li>
+					<li><a href="https://forum.aspose.com">Free Support</a></li>
+					<li><a href="https://aspose-free-consulting.github.io">Free Consulting</a></li>
+					<li><a href="https://helpdesk.aspose.com">Paid Support</a></li>
+					<li><a href="https://consulting.aspose.com/home/">Paid Consulting</a></li>
+					<li><a href="https://blog.aspose.com">Blog</a></li>
+					<li><a href="https://websites.aspose.com">Websites</a></li>
+					<li><a href="https://about.aspose.com">About Us</a></li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer2bar">
+			<div class="footer2col">
+				<div class="footer2text">
+					<p>© Aspose Pty Ltd 2001-2021. All Rights Reserved.</p>
+				</div>
+				<div class="footer2anchor"><span class="footer2bottom"><a href="https://about.aspose.com/legal/privacy-policy/">Privacy Policy</a> <span class="sep1">|</span> <a href="https://about.aspose.com/legal/terms-of-use/">Terms of use</a> <span class="sep1">|</span> <a href="https://about.aspose.com/contact/">Contacts</a></span></div>
+			</div>
+		</div>
+	</div>
+</div>
